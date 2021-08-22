@@ -14,6 +14,14 @@
         $('body').toggleClass('overflowY-hidden')
     })
 
+    $(document).on('click', '.onclick-myimg', function () {
+        $('body').addClass('overflowY-hidden')
+    })
+
+    $(document).on('click', '.close', function () {
+        $('body').removeClass('overflowY-hidden')
+    })
+
     // Preloader
     $(window).on('load', function () {
         if ($('#preloader').length) {
