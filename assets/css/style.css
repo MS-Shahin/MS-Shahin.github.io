@@ -1239,7 +1239,7 @@ a:hover {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 0px 20px rgb(200, 200, 200);
+  box-shadow: 0px 15px 30px rgb(200, 200, 200);
 }
 
 .content_item_body_image-sh a{
