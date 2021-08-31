@@ -1255,7 +1255,7 @@ a:hover {
 }
 
 .content_item_body-sh:hover {
-  /* box-shadow: 0px 5px 10px rgb(124, 124, 124); */
+  box-shadow: 0px 5px 10px rgb(124, 124, 124);
   -webkit-transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
