@@ -258,8 +258,9 @@ class Validation {
             if (message.value.length < 1) {
                 message.className = "red form-control";
             }
-
+            
         });
+        
     }
 };
 
