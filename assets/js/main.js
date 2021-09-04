@@ -10,9 +10,13 @@
         }
     })
     
+
+
     $(document).on('click', '.navbar-toggler', function () {
         $('body').toggleClass('overflowY-hidden')
     })
+
+
 
     $(document).on('click', '.onclick-myimg', function () {
         $('body').addClass('overflowY-hidden')
@@ -24,19 +28,13 @@
 
 
 
-
-
-
-    $(document).on('click', '.hover-shadow', function () {
-        $('body').addClass('overflowY-hidden')
-        $('#myModal').addClass('overflowY-hidden')
+    $(document).on('click', '.content_item_body_image-sh', function () {
+        $("#bttbtn").hide()
     })
 
     $(document).on('click', '.close', function () {
-        $('body').removeClass('overflowY-hidden')
+        $("#bttbtn").show()
     })
-
-
 
 
 
@@ -312,81 +310,6 @@ validation.validate();
 
 
 
-
-
-
-
-
-
-// Get the modal
-// var modal = document.getElementById("myModal");
-// const img1 = document.getElementById("imgid");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-// var img = document.getElementById("myImg");
-// var modalImg = document.getElementById("img01");
-// var captionText = document.getElementById("caption");
-// img.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = img1.src;
-//   captionText.innerHTML = img1.alt;
-// }
-
-// Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function openModal() {
     document.getElementById("myModal").style.display = "block";
 }
@@ -423,3 +346,6 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+
