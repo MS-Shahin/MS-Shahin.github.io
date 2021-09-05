@@ -992,6 +992,7 @@ a:hover {
 }
 
 .lead {
+  opacity: 0.8;
   padding: 0 0px;
 }
 
