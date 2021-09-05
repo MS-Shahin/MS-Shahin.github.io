@@ -214,20 +214,22 @@ a:hover {
   /* padding: 3rem 1.25rem; */
   position: relative;
   background-color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
   z-index: 1;
   /* border-radius: 10px; */
   /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
 }
 
 .box-shadow-full-middle-skill {
   padding: 0 3rem;
   position: relative;
   background-color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
   z-index: 1;
   /* border-radius: 10px; */
   /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 992px) {
@@ -236,14 +238,32 @@ a:hover {
   }
 }
 
+.box-shadow-full-middle-certificates {
+  padding: 0 3rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 0rem;
+  z-index: 1;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 992px) {
+  .box-shadow-full-middle-certificates {
+    padding: 4rem 2rem;
+  }
+}
+
 .box-shadow-full {
   /* padding: 3rem 1.25rem; */
   position: relative;
   background-color: #ffffff;
-  margin-bottom: 6rem;
+  margin-bottom: 0rem;
   z-index: 1;
   /* border-radius: 10px; */
   /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
 }
 
 .box-shadow-full-ctt {
@@ -254,6 +274,7 @@ a:hover {
   z-index: 1;
   /* border-radius: 10px; */
   /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
 }
 
 @media (min-width: 992px) {
@@ -384,7 +405,7 @@ a:hover {
   text-align: center;
   line-height: 1;
   font-size: 16px;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   border: 1px solid #0078ff;
   right: 15px;
   bottom: 15px;
@@ -601,8 +622,8 @@ a:hover {
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #040404;
-  opacity: 0.9;
+  background-color: #040404e0;
+  opacity: 1;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1844,6 +1865,7 @@ a:hover {
   border-radius: 0px !important;
   border-color: #0078ff;
   padding: 5px 25px;
+  padding-top: 7px;
   color: #0078ff;
   transition: 0.75s;
   text-transform: uppercase;
@@ -2524,7 +2546,7 @@ footer .pt-3 {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
   background-color: #000000f0;
 }
 
@@ -2645,8 +2667,8 @@ footer .pt-3 {
 .numbertext {
   color: #f2f2f2;
   background-color: #0000007a;
-  font-size: 12px;
-  padding: 8px 12px;
+  font-size: 14px;
+  padding: 12px 12px;
   position: absolute;
   top: 0;
 }
@@ -2654,6 +2676,17 @@ footer .pt-3 {
 /* img {
   margin-bottom: -4px;
 } */
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
 
 .caption-container {
   text-align: center;
@@ -2722,6 +2755,54 @@ img.hover-shadow {
   transform: scale(1);
 }
 
-.content_item_body_image-sh a::after :hover{
-  color: #0078ff;
+
+
+.img-mdl {
+  width: 80%;
+}
+
+
+
+/* Fading animation */
+.fadeMDL {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+  .img-mdl {
+    display: flex;
+  }
 }
