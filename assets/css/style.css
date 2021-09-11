@@ -1130,6 +1130,17 @@ a:hover {
   background-color: #0078ff;
 }
 
+/* .progress{
+  border-radius:0 !important;
+  overflow:visible !important;
+}
+.progress-bar{
+   background:rgb(23,44,60) !important; 
+  -webkit-transition: width 1.5s ease-in-out !important;
+  transition: width 1.5s ease-in-out !important;
+} */
+
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
